@@ -1,0 +1,9 @@
+<p>learn-html works!</p>
+<button (click)="call()">call http</button>
+<input type="text">
+<ul>
+    <li *ngFor="let data of getData" (click)="addData($event)">
+        {{data.name}}
+    </li>
+</ul>
+{{add}}

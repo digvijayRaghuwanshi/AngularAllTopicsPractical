@@ -1,0 +1,14 @@
+{{title}}
+<ul>
+  <li *ngFor="let data of objectConvert">
+    {{data.firstName}}
+  </li>
+</ul>
+<input type="radio" name="textBox" value="a" (change)="changeTextName($event)">showA
+<input type="radio" name="textBox" value="b" (change)="changeTextName($event)">showB
+<div *ngIf="addName==='a'" class="addStyle">Show Box A</div>
+<div *ngIf="addName==='b'" class="addStyle">Show Box B</div>
+<div id="app-learn-html"></div>
+
+<app-vertusa></app-vertusa>
+
