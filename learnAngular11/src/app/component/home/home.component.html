@@ -1,0 +1,21 @@
+<h1 class="centp">HOME PAGE</h1>
+
+<ul *ngFor="let user of data">
+  <li>{{ user.name }}</li>
+</ul>
+
+<h1 *ngIf="isdisable">{{ name | uppercase }}</h1>
+<button (click)="isdisable = !isdisable">{{ name | uppercase }}</button>
+
+<h1 [ngStyle]="{ color: 'red' }">sds</h1>
+<h1 [ngStyle]="{ 'font-size': '42px' }">12</h1>
+
+<p [ngClass]="{ 'first second': true, third: false }">LearnngClass</p>
+
+<input [(ngModel)]="nametxt" />
+<button (click)="getData()">Setr</button>
+{{ setdata }}
+
+<button (click)="addData()">ADD</button>
+
+{{ displayData | json }}
